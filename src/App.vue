@@ -2,8 +2,6 @@
   
   <div id="app">
   
-  
-
     <Header/>
     <Jumbotron/>
   
@@ -35,14 +33,15 @@
 
 
 <style lang="scss">
-@import '@/style/general';
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+
+  @import '@/style/general';
+  @import '@/style/commons';
+
+  .container-head {
+    width: 100%;
+    height: 1000px;
   }
+
+
 
 </style>
