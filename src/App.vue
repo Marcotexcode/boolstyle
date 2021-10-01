@@ -5,6 +5,7 @@
     <Header/>
     <!-- <Sponsor/> -->
 
+    <Jumbotron/>
   
   </div>
 
@@ -16,6 +17,7 @@
   import Header from './components/Header.vue'
   //import Sponsor from './components/Sponsor.vue'
 
+  import Jumbotron from './components/Jumbotron.vue'
 
 
   export default {
@@ -26,6 +28,7 @@
 
       Header,
      // Sponsor
+      Jumbotron
 
     }
 
