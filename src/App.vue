@@ -2,9 +2,9 @@
   
   <div id="app">
   
-    <img alt="Vue logo" src="./assets/logo.png">
   
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <Header/>
   
   </div>
 
@@ -13,7 +13,8 @@
 
 <script>
 
-  import HelloWorld from './components/HelloWorld.vue'
+  import Header from './components/Header.vue'
+
 
   export default {
 
@@ -21,7 +22,7 @@
 
     components: {
 
-      HelloWorld
+      Header
 
     }
 
@@ -31,7 +32,7 @@
 
 
 <style lang="scss">
-@import '@/style/general.scss';
+@import '@/style/general';
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -40,5 +41,5 @@
     color: #2c3e50;
     margin-top: 60px;
   }
-  
+
 </style>
