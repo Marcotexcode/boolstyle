@@ -3,6 +3,8 @@
   <div id="app">
   
     <Header/>
+    <!-- <Sponsor/> -->
+
   
   </div>
 
@@ -12,6 +14,8 @@
 <script>
 
   import Header from './components/Header.vue'
+  //import Sponsor from './components/Sponsor.vue'
+
 
 
   export default {
@@ -20,7 +24,8 @@
 
     components: {
 
-      Header
+      Header,
+     // Sponsor
 
     }
 
