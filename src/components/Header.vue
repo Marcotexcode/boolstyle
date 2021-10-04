@@ -2,14 +2,19 @@
 
     <div class="container-nav">
 
-        <h1 class="container--title"><img class="container--title--image" src="../assets/boolbeb.svg" alt=""></h1>
+        <div class="container--logo">
+
+            <img class="container--logo--image" src="../assets/boolbeb.svg" alt="">
+        
+        </div>
        
-        <h1 class="container--title-mobile" @click="myFilter">
+        <div class="container--logo-mobile" @click="myFilter">
             
-            <img class="container--title--image--mobile" src="../assets/boolbeb-icona.svg" alt="">
+            <img class="container--logo--image--mobile" src="../assets/boolbeb-icona.svg" alt="">
+
             <span><i class="fas fa-caret-down"></i></span>
        
-        </h1>
+        </div>
         
         <ul class="container--menu" :class="{active: isActive}">
 
@@ -68,18 +73,18 @@ export default {
         position: fixed;
         top: 0;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
+        height: 60px;
 
-        .container--title {
-            margin: 0;
-
-            .container--title--image {
-                width: 20%;
-                margin-left: 70px;
-            }
+        .container--logo {
+            width: 60px;
+            margin-left: 50px;
             
+            .container--logo--image {
+                width: 50px;
+            }
         }
 
-        .container--title-mobile {
+        .container--logo-mobile {
             display: none;
         }
 
@@ -119,22 +124,18 @@ export default {
             display: flex;
             min-height: 121px;
 
-            .container--title{
-                
-                .container--title--image {
-                    display: none;
-                }
-                
+            .container--logo{
+                display: none;                
             }
 
-            .container--title-mobile {
+            .container--logo-mobile {
                 font-size: 0;
                 display: block;
                 margin: 5px auto 0px;
                 width: 70px;
                 text-align: center;
 
-                .container--title--image--mobile {
+                .container--logo--image--mobile {
                     width: 100%;
                 }
 
