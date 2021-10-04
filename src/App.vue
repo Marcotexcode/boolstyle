@@ -3,9 +3,10 @@
   <div id="app">
   
     <Header/>
-    <!-- <Sponsor/> -->
 
     <Jumbotron/>
+
+    <Sponsor/>
   
   </div>
 
@@ -15,7 +16,7 @@
 <script>
 
   import Header from './components/Header.vue'
-  //import Sponsor from './components/Sponsor.vue'
+  import Sponsor from './components/Sponsor.vue'
 
   import Jumbotron from './components/Jumbotron.vue'
 
@@ -27,8 +28,8 @@
     components: {
 
       Header,
-     // Sponsor
-      Jumbotron
+      Jumbotron,
+      Sponsor
 
     }
 
