@@ -90,4 +90,18 @@
 
     }
 
+    // PARTE RESPONSIVE
+    @media (max-width: 968px) {
+
+        .container-footer {
+            display: block;
+
+            ul {
+                margin: 30px 0px;
+            }
+
+        }
+
+    }
+
 </style>

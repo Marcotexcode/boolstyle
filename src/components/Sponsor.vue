@@ -223,6 +223,7 @@
         padding: 50px;
         width: 90%;
         margin: 0 auto;
+
         .cont-caro {
             width: 100%;
             margin: 0 auto;
@@ -246,53 +247,20 @@
 
                 }
 
-            }
-
-            // .container-box {
-
-            //     .box {
-
-            //         height: 100%;
-            //         border-radius: 20px;
-            //         background: red;
-            //         padding: 20px;
-            //         margin: 5%;
-            //     }
-
-            // }
+            } 
 
         }   
 
+    }
 
-        // .container-box {
-        //     width: 90%;
-        //     padding-top: 100px;
-        //     margin: 0 auto;
-        //     display: flex;
-        //     justify-content: space-between;
+    // PARTE RESPONSIVE
+    @media (max-width: 968px) {
 
-
-        // }
-        // .box {
-        //     width: 300px;
-        //     border-radius: 20px;
-
-        //     .container-box--img {
-        //         width: 100%;
-        //         height: 250px;
-        //         border-radius: 10px;
-        //         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-        //     }
-
-        //     .container-description {
-        //         display: flex;
-        //         align-items: center;
-        //         justify-content: space-between;
-
-        //     }
-
-        // }
+        .container-sponsor {
+            padding: 5px;
+            width: 100%;
+      
+        }
 
     }
 

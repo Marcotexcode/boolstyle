@@ -89,6 +89,7 @@
             left: 0%;
             height: 100vh;
             z-index: 20;
+            padding: 20px;
 
             .btn-accept {
                 margin: 20px;
@@ -134,7 +135,6 @@
             }
 
             .accept {
-
                 height: initial;
 
             }
