@@ -18,10 +18,12 @@
         
         <ul class="container--menu" :class="{active: isActive}">
 
-            <li class="container--menu--list" @click="myFilter"><a class="container--menu--list--link" href="#">login</a></li>
+            <li class="container--menu--list" @click="myFilter"><a class="container--menu--list--link" href="#" @click="ActiveLog = !ActiveLog" >login</a></li>
             <li class="container--menu--list" @click="myFilter"><a class="container--menu--list--link" href="#">register</a></li>
 
         </ul>
+        
+        <Login :class="(ActiveLog === true) ? 'active' : 'not-active'"/>
 
     </div>
 
@@ -30,31 +32,39 @@
 
 <script>
 
-export default {
+    import Login from '@/components/Login.vue'
 
-    name: 'Header',
+    export default {
 
-    data() {
+        name: 'Header',
+
+        components: {
+
+            Login
         
-        return {
+        },
+
+        data() {
+            
+            return {
+            
+                isActive: false,
+
+            }
         
-            isActive: false
+        },
 
-        }
-    
-    },
+        methods: {
 
-    methods: {
+            myFilter: function() {
 
-        myFilter: function() {
+                this.isActive = !this.isActive;
 
-            this.isActive = !this.isActive;
+            }
 
         }
 
     }
-
-}
 
 </script>
 
@@ -74,6 +84,15 @@ export default {
         top: 0;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
         height: 60px;
+
+        .active {
+            display: block;
+        }
+
+        .not-active {
+            display: none;
+        }
+
 
         .container--logo {
             width: 60px;

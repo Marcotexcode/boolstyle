@@ -2,7 +2,7 @@
 <template>
 
     <div class="container-sponsor">
-         
+         <h2>Appartamento vetrina</h2>
         <VueSlickCarousel class="cont-caro" v-bind="settings">
             
             <div class="box">
@@ -220,10 +220,11 @@
     @import '@/style/variabili.scss';
 
     .container-sponsor {
-        height: 100vh;
-        
+        padding: 50px;
+        width: 90%;
+        margin: 0 auto;
         .cont-caro {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             display: flex;
         

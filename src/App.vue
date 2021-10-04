@@ -7,6 +7,12 @@
     <Jumbotron/>
 
     <Sponsor/>
+
+    <Banner/>
+
+    <Footer/>
+
+
   
   </div>
 
@@ -15,10 +21,13 @@
 
 <script>
 
-  import Header from './components/Header.vue'
-  import Sponsor from './components/Sponsor.vue'
+  import Header from '@/components/Header.vue'
+  import Sponsor from '@/components/Sponsor.vue'
+  import Jumbotron from '@/components/Jumbotron.vue'
+  import Banner from '@/components/Banner.vue'
+  import Footer from '@/components/Footer.vue'
 
-  import Jumbotron from './components/Jumbotron.vue'
+
 
 
   export default {
@@ -29,7 +38,9 @@
 
       Header,
       Jumbotron,
-      Sponsor
+      Sponsor,
+      Banner,
+      Footer
 
     }
 
