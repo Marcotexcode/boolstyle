@@ -47,10 +47,6 @@ export default {
         height: 500px;
     }
 
-    * {
-        box-sizing: border-box;
-    }
-
     form.example input[type=text] {
         padding: 10px;
         font-size: 17px;
